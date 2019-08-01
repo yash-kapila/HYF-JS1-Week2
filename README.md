@@ -12,6 +12,8 @@ HYF JavaScript 1 / Week 2 classwork
 
 • Operators
 
+• Functions
+
 ### Simple Data Types Recap
 
 JavaScript has following simple data types or also known as _primitive_ types.
@@ -203,3 +205,10 @@ Similar to accessing an array's _elements_ using `index`, we can access _propert
     const key = 'name';
     console.log(person[key]); // Yash Kapila; `key` here EVALUATES to `name` which is a valid key in person
     ```
+
+### Operators
+
+- https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/operators.md
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
+
+### Functions
