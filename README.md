@@ -163,3 +163,43 @@ Arrays are one of the complex data types in JavaScript which represent a collect
         months.splice(2,1,'June');
         console.log(months); // ['Jan', 'April', 'June']
         ```
+
+### Objects
+
+An object is a collection of related data and/or functionality (which usually consists of several variables and functions — which are called properties and methods). Properties and methods exist as key:value pairs. For example, a `person` could be considered as an object with properties such as `name`, `age`, `dateOfBirth` etc.
+
+```JavaScript
+// An empty object
+const obj = {};
+
+const person = {
+  name: 'Yash Kapila',
+  age: 29,
+  gender: 'M',
+  greeting() { console.log('Hello World'); }
+};
+```
+
+Similar to accessing an array's _elements_ using `index`, we can access _properties_ of an object. There are two ways of accessing properties of an object.
+
+1. dot notation(`object.property`)
+
+    ```JavaScript
+    // While using the dot notation, `name` should be a valid key inside `person` object
+
+    console.log(person.name); // Yash Kapila
+    console.log(person.noproperty); // undefined
+    ```
+
+2. bracket notation(`object['property']`)
+
+    ```JavaScript
+    // While using brackets notation, `'name'` should be EVALUATED to a valid key inside `person` object
+
+    console.log(person['name']); // Yash Kapila
+    console.log(person['noproperty']); // undefined
+
+    // Or a variable could be used to refer to a key inside the `person` object
+    const key = 'name';
+    console.log(person[key]); // Yash Kapila; `key` here EVALUATES to `name` which is a valid key in person
+    ```
