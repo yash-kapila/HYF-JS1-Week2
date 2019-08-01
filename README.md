@@ -80,3 +80,86 @@ console.log(str); // HELLO WORLD
 ```
 
 ### Arrays
+
+Arrays are one of the complex data types in JavaScript which represent a collection of values(could be both simple or complex or a combination of both).
+
+- How do we create an array?
+
+    ```JavaScript
+    const arr1 = [1,2,3,4];
+    const arr2 = new Array();
+    ```
+
+    However, it isn't recommended to use the second approach while creating arrays. This is because it has a lot of caveats. For example,
+
+    ```JavaScript
+    const arr1 = new Array(); // []
+    const arr2 = new Array('a','b'); // ['a','b']
+    const arr3 = new Array(20); // empty array of 20 items
+    const arr4 = new Array(20, 21); // [20,21]
+    ```
+
+- Array index and length?
+
+    We can access a particular element of an array using the following approach.
+
+    ```JavaScript
+    const arr1 = ['a','b','c','d','e'];
+    arr1[0]; // 'a'
+    arr1[1]; // 'b'
+    arr1[2]; // 'c'
+    arr1[3]; // 'd'
+    arr1[4]; // 'e'
+    ```
+
+    and can find out the length of an array using `arr1.length` property.
+
+- Commonly used array methods
+
+    - [push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) - add items to the end of an array
+
+        ```JavaScript
+        const arr = ['one','two','three'];
+        arr.push('four');
+        console.log(arr);  // ['one','two','three','four']
+        arr.push('five', 'six');
+        console.log(arr);  // ['one','two','three','four','five','six']
+        ```
+
+    - [unshift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) - add items to the beginning of an array
+
+        ```JavaScript
+        const arr = [1,2,3,4];
+        arr.unshift(5);
+        console.log(arr);  // [5,1,2,3,4]
+        arr.unshift(6,7);
+        console.log(arr);  // [6,7,5,1,2,3,4]
+        ```
+
+    - [shift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) - remove items from the beginning of an array
+
+        ```JavaScript
+        const arr = [1,2,3,4];
+        arr.shift();
+        console.log(arr) // [2,3,4]
+        ```
+
+    - [pop()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) - remove items from the end of an array
+
+        ```JavaScript
+        const arr = [1,2,3,4];
+        arr.pop();
+        console.log(arr) // [1,2,3]
+        ```
+
+    - [splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) - remove or replace elements from an array
+
+        ```JavaScript
+        // const spliceExample = array.splice(start[, deleteCount[, item1[, item2[, ...]]]]);
+        const months = ['Jan', 'March', 'April', 'May'];
+        months.splice(1,1);
+        console.log(months); // ['Jan', 'April', 'May']
+
+        months.splice(2,1,'June');
+        console.log(months); // ['Jan', 'April', 'June']
+        ```
