@@ -12,7 +12,7 @@ HYF JavaScript 1 / Week 2 classwork
 
 • Operators
 
-• Functions
+• Functions(basics)
 
 ### Simple Data Types Recap
 
@@ -211,4 +211,6 @@ Similar to accessing an array's _elements_ using `index`, we can access _propert
 - https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/operators.md
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
 
-### Functions
+### Functions(basics)
+
+- https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/functions.md
